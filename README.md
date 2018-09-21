@@ -85,3 +85,9 @@ feature-name/
 └── web-ext-config.js
 ```
 
+
+## Extensions and Feedback About the Tool
+
+- file issues
+- more prompts:  https://github.com/SBoudrias/Inquirer.js
+- actions for templates:  https://github.com/amwmedia/plop

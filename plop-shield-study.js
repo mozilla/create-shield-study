@@ -11,8 +11,35 @@ module.exports = function (plop) {
             type: 'input',
             name: 'id',
             message: 'webExtension id'
-        }],
-        actions: [{
+        },
+        {
+            type: 'list',
+            name: 'xtype',
+            message: 'Shield (or Pioneer)',
+            choices: [
+                'shield',
+                'pioneer'
+            ]
+        },
+        {
+            type: 'confirm',
+            name: 'tellSI',
+            message: 'inform Strategy and Insights about your project'
+        },
+        {
+            type: 'checkbox',
+            name: 'libraries',
+            message:  'choose all starting libraries',
+            choices: [
+                {
+                    name: 'shield-study-addon-utils',
+                    checked: true
+                },
+            ]
+        }
+        ],
+        actions: [
+        {
             type: 'addMany',
             destination: '{{id}}/',
             templateFiles: 'templates/shield-study'
