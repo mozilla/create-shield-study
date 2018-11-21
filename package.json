@@ -9,9 +9,9 @@
   "bugs": {
     "url": "https://github.com/mozilla/create-shield-study/issues"
   },
-  "dependencies": {},
+  "dependencies": { 
+    "plop": "^2.1.0"},
   "devDependencies": {
-    "plop": "^2.1.0"
   },
   "homepage": "https://github.com/mozilla/create-shield-study#readme",
   "keywords": [],

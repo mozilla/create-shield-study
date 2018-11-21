@@ -1,3 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env node
 
-./node_modules/.bin/plop --plopfile plop-shield-study.js $@
+const pathJoin = require("path").join;
+
+process.argv.push('--plopfile', pathJoin(__dirname, "plop-shield-study.js"));
+require("plop");

@@ -1,5 +1,9 @@
 
+const pathJoin = require('path').join;
+
 module.exports = function (plop) {
+    const templateDir = pathJoin(__dirname, 'templates/shield-study');
+
     plop.setActionType('info', function (answers, config, plop) {
         return plop.renderString(config.msg, answers);
     });
@@ -42,13 +46,14 @@ module.exports = function (plop) {
         actions: [
             {
                 type: 'addMany',
-                destination: '{{id}}/',
-                templateFiles: 'templates/shield-study',
-                base: 'templates/shield-study',
+                destination: pathJoin(process.cwd(), "{{id}}"),
+                templateFiles: templateDir,
+                base: templateDir,
+                globOptions: {dot: true},
             },
             {
                 type: 'info',
-                msg: 'Addon created =>  {{id}}/',
+                msg: "Addon created => {{id}}/",
             }
         ]
     });
