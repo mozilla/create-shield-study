@@ -1,15 +1,27 @@
 {
-  "name": "x-create-shield-study",
+  "name": "create-shield-study",
+  "description": "Create new Shield studies via the CLI",
   "version": "1.0.0",
-  "description": "",
+  "author": "Mozilla",
+  "bin": {
+    "create-shield-study": "create-shield-study"
+  },
+  "bugs": {
+    "url": "https://github.com/mozilla/create-shield-study/issues"
+  },
+  "dependencies": { 
+    "plop": "^2.1.0"},
+  "devDependencies": {
+  },
+  "homepage": "https://github.com/mozilla/create-shield-study#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla/create-shield-study.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "plop": "^2.1.0"
   }
 }

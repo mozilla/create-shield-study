@@ -5,7 +5,7 @@
   "manifest_version": 2,
   "applications": {
     "gecko": {
-      "id": "{{fill in your thing}}",
+      "id": "{{id}}",
       "strict_min_version": "61.0a1"
     }
   },
@@ -35,5 +35,4 @@
   "icons": {
     "48": "icons/study-icon.svg"
   }
-  //
 }
